@@ -1,0 +1,16 @@
+{# Homepage #}
+<h1>{{ title }}</h1>
+<div>
+  Our sweet track list: TODO
+</div>
+
+<ul>
+  {% for track in tracks %}
+    <li>
+      <strong>{{ track.song|upper }}</strong>
+      <ul>
+        <li>{{ track.artist }}</li>
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
