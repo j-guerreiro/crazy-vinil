@@ -2,20 +2,34 @@
 {% block title %}Create a new record | {{ parent() }} {% endblock %}
 
 {% block tracks %}
-  <h1>{{ title }}</h1>
-  <div>
-    Our sweet track list: TODO
+  <div class="container text-left">
+    <h1>{{ title }}</h1>
+    <div>
+      <p>Our sweet track list: TODO</p>
+    </div>
   </div>
-
-  <ul>
-    {% for track in tracks %}
-      <li>
-        <strong>{{ track.song|upper }}</strong>
-        <ul>
-          <li>{{ track.artist }}</li>
+  
+  <div class="container tracks-container">
+    <div class="col-12">
+      <div class="row">
+        <img src="{{ asset('images/joyce-g-ITVCF_F1_00-unsplash.jpg') }}">
+        <ul class="track-list">
+          {% for track in tracks %}
+            <li>
+              <i class="fa-solid fa-circle-play"></i>
+              <strong>{{ track.artist|upper }}</strong>
+              <i class="fa-solid fa-record-vinyl"></i>
+              <ul>
+                <li>
+                  {{ track.song }}
+                  <i class="fa-solid fa-music"></i>
+                </li>
+              </ul>
+            </li>
+          {% endfor %}
         </ul>
-      </li>
-    {% endfor %}
-  </ul>
+      </div>
+    </div>
+  </div>
 {% endblock %}
 

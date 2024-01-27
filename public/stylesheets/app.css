@@ -1,0 +1,49 @@
+body {
+  background: darkslategrey;
+}
+
+h1 {
+  color: antiquewhite;
+}
+
+p {
+  color: azure;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.tracks-container img {
+  border-radius: 30px;
+  height: 750px;
+}
+
+.track-list ul li,
+.track-list strong {
+  color: antiquewhite;
+  background: #323233;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  font-weight: 300;
+}
+ul.track-list  {
+  list-style-type: none;
+}
+
+.track-list ul li {
+  margin: 10px;
+  padding: 10px;
+  background-color: cadetblue;
+  border-radius: 15px;
+  color: floralwhite;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 300;
+  list-style-type: none;
+}
+
+.fa-solid {
+  margin: 0 5px;
+}
