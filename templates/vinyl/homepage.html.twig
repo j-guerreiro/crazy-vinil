@@ -1,16 +1,21 @@
-{# Homepage #}
-<h1>{{ title }}</h1>
-<div>
-  Our sweet track list: TODO
-</div>
+{% extends 'base.html.twig' %}
+{% block title %}Create a new record | {{ parent() }} {% endblock %}
 
-<ul>
-  {% for track in tracks %}
-    <li>
-      <strong>{{ track.song|upper }}</strong>
-      <ul>
-        <li>{{ track.artist }}</li>
-      </ul>
-    </li>
-  {% endfor %}
-</ul>
+{% block tracks %}
+  <h1>{{ title }}</h1>
+  <div>
+    Our sweet track list: TODO
+  </div>
+
+  <ul>
+    {% for track in tracks %}
+      <li>
+        <strong>{{ track.song|upper }}</strong>
+        <ul>
+          <li>{{ track.artist }}</li>
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
