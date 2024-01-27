@@ -83,7 +83,7 @@ class VinylController extends AbstractController
     return $this->render(
       'vinyl/homepage.html.twig',
       [
-        'title' => 'PB & Jams',
+        'title' => 'Music for the hunger ears',
         'tracks' => $neoclassicalRock
       ]
     );
